@@ -1,0 +1,18 @@
+<table class="table table-bordered table-hover table-dark">
+    <thead>
+      <tr>
+        <th scope="col">Time</th>
+        <th scope="col">Traning Name</th>
+        <th scope="col">Coach Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr  *ngFor="let s of gymdata2">
+        <td scope="row">{{s.timing}}</td>
+        <td>{{s.trainingname|uppercase}}</td>
+        <td>{{s.coach|uppercase}}</td>
+     
+      </tr>
+      
+    </tbody>
+  </table>
